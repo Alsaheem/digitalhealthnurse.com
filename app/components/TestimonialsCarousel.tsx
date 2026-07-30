@@ -91,8 +91,8 @@ export default function TestimonialsCarousel() {
           Guidance from someone who understands the journey
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#516361]">
-          Placeholder reflections from healthcare professionals exploring careers
-          beyond clinical practice.
+          Reflections from healthcare professionals exploring careers beyond
+          clinical practice.
         </p>
       </div>
 
