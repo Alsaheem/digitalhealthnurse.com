@@ -712,13 +712,6 @@ export default function Home() {
             </div>
           </FadeUp>
         </div>
-
-        <p className="mt-6 w-full rounded-2xl border border-[#C8D8CF] bg-[#DDE9E2]/45 px-5 py-4 text-sm leading-6 text-[#516361]">
-          Career mentoring provides practical guidance based on professional
-          experience. It is not a recruitment service and does not guarantee employment
-          or replace legal, financial or regulated professional advice. You remain
-          responsible for your own career decisions.
-        </p>
       </section>
 
       {/* How It Works */}
