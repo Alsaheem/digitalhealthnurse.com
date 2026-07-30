@@ -31,3 +31,98 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Subtle motion utilities */
+.fade-up {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.fade-up-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lift-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.lift-card:hover {
+  transform: translateY(-4px);
+}
+
+.scale-btn {
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.scale-btn:hover {
+  transform: scale(1.03);
+}
+
+.scale-btn:active {
+  transform: scale(0.98);
+}
+
+/* Testimonials marquee */
+.testimonial-marquee {
+  overflow: hidden;
+}
+
+.testimonial-track {
+  animation: testimonial-scroll 55s linear infinite;
+  will-change: transform;
+}
+
+.testimonial-marquee:hover .testimonial-track {
+  animation-play-state: paused;
+}
+
+@keyframes testimonial-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .lift-card:hover,
+  .scale-btn:hover,
+  .scale-btn:active {
+    transform: none;
+  }
+
+  .testimonial-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    justify-content: center;
+  }
+
+  .testimonial-card:nth-child(n + 7) {
+    display: none;
+  }
+}
