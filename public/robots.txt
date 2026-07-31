@@ -1,0 +1,15 @@
+# robots.txt for https://digitalhealthnurse.com
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Helpful pages for search engines
+Allow: /blog
+Allow: /blog/
+Allow: /feedback
+Allow: /privacy
+Allow: /booking-terms
+
+Sitemap: https://digitalhealthnurse.com/sitemap.xml
+Host: https://digitalhealthnurse.com

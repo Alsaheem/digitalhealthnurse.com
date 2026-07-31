@@ -74,13 +74,20 @@ export default function BookingTerms() {
                     <strong className="font-semibold text-slate-900 dark:text-slate-100">
                       Free Introductory Call:
                     </strong>{" "}
-                    a brief introductory call lasting up to 15 minutes.
+                    a brief introductory call lasting up to 20 minutes.
                   </li>
                   <li>
                     <strong className="font-semibold text-slate-900 dark:text-slate-100">
                       Career Strategy Session:
                     </strong>{" "}
                     a focused career-mentoring session lasting up to 45 minutes.
+                  </li>
+                  <li>
+                    <strong className="font-semibold text-slate-900 dark:text-slate-100">
+                      Interview Readiness &amp; Mock Interviews:
+                    </strong>{" "}
+                    includes 2 AI practice interviews and 1 live 30-minute mock
+                    interview session.
                   </li>
                 </ul>
                 <p className="mt-4">
@@ -133,7 +140,12 @@ export default function BookingTerms() {
                 <p>
                   The current price of a Career Strategy Session is{" "}
                   <strong className="font-semibold text-slate-900 dark:text-slate-100">
-                    £25
+                    £30
+                  </strong>
+                  . The current price of the Interview Readiness &amp; Mock Interviews
+                  package is{" "}
+                  <strong className="font-semibold text-slate-900 dark:text-slate-100">
+                    £50
                   </strong>
                   .
                 </p>

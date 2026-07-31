@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import profilePhoto from "../public/stacy-mentoring-portrait.png";
 import FadeUp from "./components/FadeUp";
+import SiteFooter from "./components/SiteFooter";
+import SiteHeader from "./components/SiteHeader";
 import TestimonialsCarousel from "./components/TestimonialsCarousel";
 
 const careerRoles = [
@@ -159,48 +161,7 @@ function CheckIcon({ className }: { className: string }) {
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FFF9F4] text-[#243332]">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b border-[#DDE9E2] bg-[#FFF9F4]/95 shadow-[0_1px_12px_rgba(23,78,79,0.06)] backdrop-blur-md">
-        <div className="mx-auto max-w-[90rem] px-5 py-4 sm:px-8">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-            <div className="text-xl font-bold tracking-tight text-[#174E4F] sm:text-2xl">
-              Digital Health Nurse
-            </div>
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3 lg:justify-end">
-              <a
-                href="#about"
-                className="inline-flex min-h-11 items-center rounded-full px-3 py-2.5 text-[0.95rem] font-semibold text-[#243332] transition-colors hover:bg-[#DDE9E2] hover:text-[#174E4F] sm:px-4"
-              >
-                Meet Stacy
-              </a>
-              <a
-                href="#skills"
-                className="inline-flex min-h-11 items-center rounded-full px-3 py-2.5 text-[0.95rem] font-semibold text-[#243332] transition-colors hover:bg-[#DDE9E2] hover:text-[#174E4F] sm:px-4"
-              >
-                How I Help
-              </a>
-              <a
-                href="#projects"
-                className="inline-flex min-h-11 items-center rounded-full px-3 py-2.5 text-[0.95rem] font-semibold text-[#243332] transition-colors hover:bg-[#DDE9E2] hover:text-[#174E4F] sm:px-4"
-              >
-                Who It&apos;s For
-              </a>
-              <a
-                href="#mentoring"
-                className="scale-btn inline-flex min-h-11 items-center rounded-full bg-[#174E4F] px-5 py-2.5 text-[0.95rem] font-semibold text-white shadow-sm hover:bg-[#123E3F] hover:shadow-md"
-              >
-                Book a Session
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex min-h-11 items-center rounded-full px-3 py-2.5 text-[0.95rem] font-semibold text-[#243332] transition-colors hover:bg-[#DDE9E2] hover:text-[#174E4F] sm:px-4"
-              >
-                Contact
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <SiteHeader />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[linear-gradient(135deg,#FFF9F4_0%,#FFF9F4_50%,#F7DED4_100%)]">
@@ -590,19 +551,20 @@ export default function Home() {
           <p className="mb-12 max-w-4xl text-lg leading-8 text-[#516361]">
             Choose the support that matches where you are now. If you are unsure whether
             mentoring is suitable, begin with a brief introductory call. If you are ready
-            for focused guidance, book a Career Strategy Session.
+            for focused guidance, book a Career Strategy Session or Interview Readiness
+            package.
           </p>
         </FadeUp>
 
-        <div className="grid items-start gap-8 md:grid-cols-2">
+        <div className="grid items-start gap-8 md:grid-cols-2 xl:grid-cols-3">
           {/* Introductory Call */}
           <FadeUp>
             <div className="lift-card rounded-3xl border border-[#C8D8CF] bg-[#FFFCF9] p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
               <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#D96F59]">
-                Free Offer
+                Free
               </p>
               <h3 className="mb-5 text-2xl font-bold leading-tight text-[#174E4F] md:text-3xl">
-                Free 15-Minute Introductory Call
+                Free 20-Minute Introductory Call
               </h3>
               <p className="mb-6 text-base leading-7 text-[#516361]">
                 A brief conversation to understand where you are in your career, what
@@ -667,7 +629,7 @@ export default function Home() {
                   Introductory Price
                 </p>
                 <p className="mt-1 text-5xl font-bold tracking-tight text-[#FFF9F4] md:text-6xl">
-                  £25
+                  £30
                 </p>
               </div>
 
@@ -708,6 +670,72 @@ export default function Home() {
                 className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#FFF9F4] px-8 py-4 text-base font-bold text-[#174E4F] shadow-[0_10px_25px_rgba(0,0,0,0.15)] hover:bg-white hover:shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
               >
                 Book a Career Strategy Session
+              </a>
+            </div>
+          </FadeUp>
+
+          {/* Interview Readiness */}
+          <FadeUp delayMs={120}>
+            <div className="lift-card rounded-3xl border border-[#C8D8CF] bg-white p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
+              <span className="mb-5 inline-flex rounded-full bg-[#F7DED4] px-4 py-2 text-sm font-bold text-[#174E4F]">
+                Interview Prep
+              </span>
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#D96F59]">
+                Paid Offer
+              </p>
+              <h3 className="mb-5 text-2xl font-bold leading-tight text-[#174E4F] md:text-3xl">
+                Interview Readiness &amp; Mock Interviews
+              </h3>
+              <p className="mb-6 text-base leading-7 text-[#516361]">
+                Build confidence before real interviews with structured practice,
+                feedback and a clearer way to talk about your healthcare experience.
+              </p>
+
+              <div className="mb-7">
+                <p className="text-5xl font-bold tracking-tight text-[#174E4F] md:text-6xl">
+                  £50
+                </p>
+              </div>
+
+              <ul className="mb-6 space-y-4">
+                <li className="flex gap-3 text-base leading-7 text-[#243332]">
+                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                  <span>2 AI practice interviews to rehearse answers at your own pace</span>
+                </li>
+                <li className="flex gap-3 text-base leading-7 text-[#243332]">
+                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                  <span>
+                    1 live 30-minute mock interview session for personalised feedback
+                  </span>
+                </li>
+                <li className="flex gap-3 text-base leading-7 text-[#243332]">
+                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                  <span>
+                    Guidance on communicating transferable skills with clarity and
+                    confidence
+                  </span>
+                </li>
+                <li className="flex gap-3 text-base leading-7 text-[#243332]">
+                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                  <span>
+                    Practical tips to strengthen your interview story for digital health
+                    and non-clinical roles
+                  </span>
+                </li>
+              </ul>
+
+              <p className="mb-7 border-l-4 border-[#D96F59] pl-4 text-sm leading-6 text-[#516361]">
+                Ideal if you are preparing for interviews and want both flexible AI
+                practice and live feedback.
+              </p>
+
+              <a
+                href="https://cal.com/stacy-nyangere/interview-readiness"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+              >
+                Book Interview Readiness
               </a>
             </div>
           </FadeUp>
@@ -996,60 +1024,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#174E4F]">
-        <div className="mx-auto max-w-7xl px-6 py-12 sm:px-8">
-          <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-            <div className="max-w-xl">
-              <div className="mb-4 h-1 w-12 rounded-full bg-[#D96F59]" />
-              <p className="text-2xl font-bold tracking-tight text-[#FFF9F4]">
-                Digital Health Nurse
-              </p>
-              <p className="mt-3 text-base leading-7 text-[#DDE9E2]">
-                Practical career mentoring for nurses and healthcare professionals
-                exploring new career directions.
-              </p>
-            </div>
-
-            <nav
-              aria-label="Legal information"
-              className="flex flex-col items-start gap-3 sm:flex-row sm:gap-6"
-            >
-              <Link
-                href="/privacy"
-                className="rounded-sm py-2 text-sm font-semibold text-[#FFF9F4] underline decoration-[#D96F59] decoration-2 underline-offset-4 transition-colors hover:text-[#F7DED4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D96F59] focus-visible:ring-offset-2 focus-visible:ring-offset-[#174E4F]"
-              >
-                Privacy Notice
-              </Link>
-              <Link
-                href="/booking-terms"
-                className="rounded-sm py-2 text-sm font-semibold text-[#FFF9F4] underline decoration-[#D96F59] decoration-2 underline-offset-4 transition-colors hover:text-[#F7DED4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D96F59] focus-visible:ring-offset-2 focus-visible:ring-offset-[#174E4F]"
-              >
-                Booking Terms
-              </Link>
-            </nav>
-          </div>
-
-          <div className="mt-10 border-t border-[#DDE9E2]/30 pt-8">
-            <div className="max-w-4xl">
-              <p className="text-sm font-semibold text-[#FFF9F4]">
-                © 2026 Digital Health Nurse. All rights reserved.
-              </p>
-              <p className="mt-4 text-sm leading-6 text-[#DDE9E2]">
-                Digital Health Nurse is an independent personal website. The views
-                expressed are my own and do not represent any current or former
-                employer. Please do not share patient-identifiable information or
-                confidential information belonging to an employer, customer or other
-                organisation.
-              </p>
-              <p className="mt-4 text-sm leading-6 text-[#DDE9E2]">
-                Career mentoring provides practical guidance only. It does not
-                guarantee employment or replace legal, financial, clinical or other
-                regulated professional advice.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
