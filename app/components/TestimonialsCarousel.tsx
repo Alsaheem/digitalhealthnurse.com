@@ -9,7 +9,7 @@ const testimonials = [
     name: "James O.",
     role: "Healthcare assistant transitioning careers",
     quote:
-      "I had been applying for months with no replies. One session clarified how to talk about my transferable skills — and my applications started getting responses.",
+      "I had been applying for months with no replies. One session clarified how to talk about my transferable skills, and my applications started getting responses.",
   },
   {
     name: "Priya S.",
@@ -21,7 +21,7 @@ const testimonials = [
     name: "Daniel M.",
     role: "Allied health professional",
     quote:
-      "I left with a practical action plan — roles to research, LinkedIn changes to make, and a clearer story for interviews. Exactly what I needed.",
+      "I left with a practical action plan: roles to research, LinkedIn changes to make, and a clearer story for interviews. Exactly what I needed.",
   },
   {
     name: "Chloe R.",

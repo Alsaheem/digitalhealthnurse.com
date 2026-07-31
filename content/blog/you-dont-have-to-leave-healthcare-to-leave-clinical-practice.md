@@ -4,7 +4,7 @@ date: "2026-07-31"
 description: "Leaving clinical practice does not mean leaving healthcare. Explore career paths in digital health, informatics, customer success and other non-clinical roles that still use your experience."
 ---
 
-For many nurses and healthcare professionals, the idea of leaving clinical practice feels final — as if stepping away from the ward, clinic or community team means stepping away from healthcare altogether.
+For many nurses and healthcare professionals, the idea of leaving clinical practice feels final, as if stepping away from the ward, clinic or community team means stepping away from healthcare altogether.
 
 It does not.
 
@@ -14,14 +14,14 @@ There is a growing space between traditional clinical roles and completely unrel
 
 Digital health is much broader than most healthcare professionals realise. Depending on your experience, interests and strengths, opportunities can include:
 
-- **Clinical Informatics** — use clinical expertise to improve healthcare systems, workflows and patient outcomes
-- **Customer Success** — support healthcare organisations in successfully adopting digital health solutions
-- **Clinical Applications Specialist** — train and support clinicians using healthcare technologies and software
-- **Implementation Consultant** — help hospitals and healthcare organisations deploy new digital solutions
-- **Clinical Product Specialist** — bridge the gap between clinicians and product teams to improve healthcare technology
-- **Digital Transformation** — lead projects that improve healthcare delivery through technology and innovation
-- **Clinical Safety** — ensure digital health products are safe for patients and compliant with healthcare regulations
-- **Product Management** — work with engineers, designers and clinicians to shape products that solve real healthcare challenges
+- **Clinical Informatics**: use clinical expertise to improve healthcare systems, workflows and patient outcomes
+- **Customer Success**: support healthcare organisations in successfully adopting digital health solutions
+- **Clinical Applications Specialist**: train and support clinicians using healthcare technologies and software
+- **Implementation Consultant**: help hospitals and healthcare organisations deploy new digital solutions
+- **Clinical Product Specialist**: bridge the gap between clinicians and product teams to improve healthcare technology
+- **Digital Transformation**: lead projects that improve healthcare delivery through technology and innovation
+- **Clinical Safety**: ensure digital health products are safe for patients and compliant with healthcare regulations
+- **Product Management**: work with engineers, designers and clinicians to shape products that solve real healthcare challenges
 
 You do not need experience in every one of these roles. The skills you have already built in healthcare may open more doors than you expect.
 
@@ -61,7 +61,7 @@ Those questions usually lead to clearer opportunities than starting from zero.
 
 ## You are not starting over
 
-Moving beyond clinical practice does take intentional positioning — a clearer story on your CV, LinkedIn profile and in interviews. But it does not mean discarding the years you have already invested in healthcare.
+Moving beyond clinical practice does take intentional positioning: a clearer story on your CV, LinkedIn profile and in interviews. But it does not mean discarding the years you have already invested in healthcare.
 
 The experience you have built with patients, colleagues and complex systems may be more transferable than you think.
 

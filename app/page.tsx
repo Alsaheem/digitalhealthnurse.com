@@ -284,7 +284,7 @@ export default function Home() {
               <path d="M7 12v4.5c2.8 2 7.2 2 10 0V12M21 9v6" />
             </svg>
             <p className="text-base font-semibold text-[#174E4F]">
-              MSc Healthcare Informatics — In Progress
+              MSc Healthcare Informatics (In Progress)
             </p>
           </div>
         </div>

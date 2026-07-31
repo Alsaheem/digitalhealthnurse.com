@@ -49,12 +49,6 @@ export default function SiteHeader({ homePrefix = "" }: SiteHeaderProps) {
             >
               Book a Session
             </a>
-            <a
-              href={`${prefix}#contact`}
-              className="inline-flex min-h-11 items-center rounded-full px-3 py-2.5 text-[0.95rem] font-semibold text-[#243332] transition-colors hover:bg-[#DDE9E2] hover:text-[#174E4F] sm:px-4"
-            >
-              Contact
-            </a>
           </div>
         </div>
       </div>

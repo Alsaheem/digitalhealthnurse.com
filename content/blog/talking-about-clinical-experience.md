@@ -6,7 +6,7 @@ description: "A simple way to translate nursing and healthcare experience into l
 
 One of the most common challenges I hear from nurses and healthcare professionals is this:
 
-“I know my experience is valuable — I just don’t know how to explain it.”
+“I know my experience is valuable. I just don’t know how to explain it.”
 
 That is normal. Clinical environments have their own language. Digital health and health tech roles often use a different one.
 

@@ -17,9 +17,15 @@ export default function SiteFooter() {
           </div>
 
           <nav
-            aria-label="Legal information"
-            className="flex flex-col items-start gap-3 sm:flex-row sm:gap-6"
+            aria-label="Site links"
+            className="flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:gap-6"
           >
+            <a
+              href="/#contact"
+              className="rounded-sm py-2 text-sm font-semibold text-[#FFF9F4] underline decoration-[#D96F59] decoration-2 underline-offset-4 transition-colors hover:text-[#F7DED4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D96F59] focus-visible:ring-offset-2 focus-visible:ring-offset-[#174E4F]"
+            >
+              Contact
+            </a>
             <Link
               href="/blog"
               className="rounded-sm py-2 text-sm font-semibold text-[#FFF9F4] underline decoration-[#D96F59] decoration-2 underline-offset-4 transition-colors hover:text-[#F7DED4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D96F59] focus-visible:ring-offset-2 focus-visible:ring-offset-[#174E4F]"

@@ -1,7 +1,7 @@
 ---
 title: "You Don't Need a Tech Background to Explore Digital Health"
 date: "2026-07-28"
-description: "Why healthcare experience is often the missing piece in digital health — and how to start exploring roles without starting from scratch."
+description: "Why healthcare experience is often the missing piece in digital health, and how to start exploring roles without starting from scratch."
 ---
 
 If you have spent years in clinical practice, it is easy to assume digital health roles are reserved for people with coding skills, product titles or years in technology companies.
