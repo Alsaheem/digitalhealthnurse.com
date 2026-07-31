@@ -302,13 +302,13 @@ export default function Home() {
               aria-hidden="true"
               className="absolute -left-4 -top-4 h-16 w-16 rounded-full bg-[#D96F59]/90 sm:h-20 sm:w-20"
             />
-            <div className="relative aspect-square overflow-hidden rounded-[3rem_1.5rem_3rem_1.5rem] border-4 border-white bg-white shadow-[0_22px_50px_rgba(23,78,79,0.18)]">
+            <div className="relative aspect-[1122/1402] overflow-hidden rounded-[3rem_1.5rem_3rem_1.5rem] border-4 border-white bg-white shadow-[0_22px_50px_rgba(23,78,79,0.18)]">
               <Image
                 src={profilePhoto}
                 alt="Stacy Nyangere"
-                width={1200}
-                height={1200}
-                className="h-full w-full object-cover object-center"
+                width={1122}
+                height={1402}
+                className="h-full w-full object-cover object-center brightness-[1.12] contrast-[1.03]"
                 priority
               />
             </div>
