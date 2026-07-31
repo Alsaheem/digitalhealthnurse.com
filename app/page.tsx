@@ -306,9 +306,9 @@ export default function Home() {
               <Image
                 src={profilePhoto}
                 alt="Stacy Nyangere"
-                width={500}
-                height={600}
-                className="h-full w-full object-cover object-[center_40%]"
+                width={1200}
+                height={1200}
+                className="h-full w-full object-cover object-center"
                 priority
               />
             </div>
@@ -555,249 +555,207 @@ export default function Home() {
           </p>
         </FadeUp>
 
-        <div className="grid items-stretch gap-6 md:grid-cols-2 md:gap-8">
+        <div className="grid items-stretch gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-4">
           {/* Introductory Call */}
           <FadeUp className="h-full">
-            <div className="lift-card flex h-full flex-col rounded-3xl border border-[#C8D8CF] bg-[#FFFCF9] p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
-              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#D96F59]">
+            <div className="lift-card flex h-full flex-col rounded-2xl border border-[#C8D8CF] bg-[#FFFCF9] p-5 shadow-[0_8px_24px_rgba(23,78,79,0.07)] sm:p-6">
+              <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#D96F59]">
                 Free
               </p>
-              <h3 className="mb-4 text-2xl font-bold leading-tight text-[#174E4F] md:text-[1.75rem]">
+              <h3 className="mb-2 text-lg font-bold leading-snug text-[#174E4F]">
                 Free 20-Minute Introductory Call
               </h3>
-              <p className="mb-6 text-base leading-7 text-[#516361]">
-                A brief conversation to understand where you are in your career, what
-                you are considering and whether paid mentoring would be appropriate.
+              <p className="mb-4 text-sm leading-6 text-[#516361]">
+                A brief conversation to understand where you are and whether paid
+                mentoring would be appropriate.
               </p>
 
-              <div className="mb-7">
-                <p className="text-5xl font-bold tracking-tight text-[#174E4F]">£0</p>
-              </div>
+              <p className="mb-4 text-3xl font-bold tracking-tight text-[#174E4F]">£0</p>
 
-              <ul className="mb-6 flex-1 space-y-4">
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+              <ul className="mb-4 flex-1 space-y-2.5">
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
                   <span>Ask initial questions about the mentoring service</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
                   <span>Briefly explain the career change you are considering</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
                   <span>Decide which package is the best fit for you</span>
                 </li>
               </ul>
 
-              <p className="mb-7 border-l-4 border-[#D96F59] pl-4 text-sm leading-6 text-[#516361]">
-                This is an introductory suitability call rather than a detailed
-                mentoring session.
+              <p className="mb-4 border-l-2 border-[#D96F59] pl-3 text-xs leading-5 text-[#516361]">
+                Introductory suitability call, not a detailed mentoring session.
               </p>
 
               <a
                 href="https://cal.com/stacy-nyangere/career-intro-call"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="scale-btn mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+                className="scale-btn mt-auto inline-flex min-h-10 w-full items-center justify-center rounded-full bg-[#174E4F] px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-[#123E3F]"
               >
-                Book a Free Introductory Call
+                Book Free Call
               </a>
             </div>
           </FadeUp>
 
           {/* Career Strategy Session */}
-          <FadeUp delayMs={60} className="h-full">
-            <div className="lift-card relative flex h-full flex-col rounded-3xl border-2 border-[#174E4F] bg-[#174E4F] p-8 shadow-[0_18px_45px_rgba(23,78,79,0.20)] md:p-10">
-              <span className="mb-4 inline-flex w-fit rounded-full bg-[#D96F59] px-4 py-2 text-sm font-bold text-white">
+          <FadeUp delayMs={50} className="h-full">
+            <div className="lift-card relative flex h-full flex-col rounded-2xl border-2 border-[#174E4F] bg-[#174E4F] p-5 shadow-[0_12px_28px_rgba(23,78,79,0.18)] sm:p-6">
+              <span className="mb-2 inline-flex w-fit rounded-full bg-[#D96F59] px-3 py-1 text-xs font-bold text-white">
                 Focused Support
               </span>
-              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#F7DED4]">
-                Paid Offer
-              </p>
-              <h3 className="mb-4 text-2xl font-bold leading-tight text-[#FFF9F4] md:text-[1.75rem]">
+              <h3 className="mb-2 text-lg font-bold leading-snug text-[#FFF9F4]">
                 45-Minute Career Strategy Session
               </h3>
-              <p className="mb-6 text-base leading-7 text-[#DDE9E2]">
-                A focused one-to-one session to explore realistic career directions,
-                recognise the value of your experience and identify practical next
-                steps.
+              <p className="mb-4 text-sm leading-6 text-[#DDE9E2]">
+                Explore realistic career directions, transferable skills and practical
+                next steps.
               </p>
 
-              <div className="mb-7">
-                <p className="text-2xl font-semibold tracking-tight text-[#DDE9E2]/80 line-through decoration-[#D96F59] decoration-2">
+              <div className="mb-4">
+                <p className="text-base font-semibold tracking-tight text-[#DDE9E2]/80 line-through decoration-[#D96F59]">
                   £49
                 </p>
-                <p className="mt-2 text-sm font-semibold uppercase tracking-[0.14em] text-[#F7DED4]">
+                <p className="mt-0.5 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-[#F7DED4]">
                   Introductory Price
                 </p>
-                <p className="mt-1 text-5xl font-bold tracking-tight text-[#FFF9F4]">
-                  £30
-                </p>
+                <p className="text-3xl font-bold tracking-tight text-[#FFF9F4]">£30</p>
               </div>
 
-              <ul className="mb-6 flex-1 space-y-4">
-                <li className="flex gap-3 text-base leading-7 text-[#FFF9F4]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#D96F59]" />
-                  <span>
-                    Explore career directions that may fit your experience and
-                    priorities
-                  </span>
+              <ul className="mb-4 flex-1 space-y-2.5">
+                <li className="flex gap-2.5 text-sm leading-6 text-[#FFF9F4]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#D96F59]" />
+                  <span>Explore career directions that fit your experience</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#FFF9F4]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#D96F59]" />
-                  <span>Identify transferable skills relevant to different roles</span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#FFF9F4]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#D96F59]" />
+                  <span>Identify transferable skills for different roles</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#FFF9F4]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#D96F59]" />
-                  <span>
-                    Discuss your CV, LinkedIn positioning or interview story where
-                    relevant
-                  </span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#FFF9F4]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#D96F59]" />
+                  <span>Discuss CV, LinkedIn or interview story where relevant</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#FFF9F4]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#D96F59]" />
-                  <span>Agree practical next steps for continuing your transition</span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#FFF9F4]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#D96F59]" />
+                  <span>Agree practical next steps for your transition</span>
                 </li>
               </ul>
 
-              <p className="mb-7 border-l-4 border-[#D96F59] pl-4 text-sm leading-6 text-[#DDE9E2]">
-                Leave with greater clarity about the options worth exploring and the
-                actions to prioritise next.
+              <p className="mb-4 border-l-2 border-[#D96F59] pl-3 text-xs leading-5 text-[#DDE9E2]">
+                Leave clearer on options worth exploring and what to prioritise next.
               </p>
 
               <a
                 href="https://cal.com/stacy-nyangere/career-strategy-session"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="scale-btn mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#FFF9F4] px-8 py-4 text-base font-bold text-[#174E4F] shadow-[0_10px_25px_rgba(0,0,0,0.15)] hover:bg-white hover:shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
+                className="scale-btn mt-auto inline-flex min-h-10 w-full items-center justify-center rounded-full bg-[#FFF9F4] px-5 py-2.5 text-sm font-bold text-[#174E4F] shadow-sm hover:bg-white"
               >
-                Book a Career Strategy Session
+                Book Strategy Session
               </a>
             </div>
           </FadeUp>
 
           {/* CV & LinkedIn */}
-          <FadeUp delayMs={90} className="h-full">
-            <div className="lift-card flex h-full flex-col rounded-3xl border border-[#C8D8CF] bg-white p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
-              <span className="mb-4 inline-flex w-fit rounded-full bg-[#DDE9E2] px-4 py-2 text-sm font-bold text-[#174E4F]">
+          <FadeUp delayMs={80} className="h-full">
+            <div className="lift-card flex h-full flex-col rounded-2xl border border-[#C8D8CF] bg-white p-5 shadow-[0_8px_24px_rgba(23,78,79,0.07)] sm:p-6">
+              <span className="mb-2 inline-flex w-fit rounded-full bg-[#DDE9E2] px-3 py-1 text-xs font-bold text-[#174E4F]">
                 Profile Support
               </span>
-              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#D96F59]">
-                Paid Offer
-              </p>
-              <h3 className="mb-4 text-2xl font-bold leading-tight text-[#174E4F] md:text-[1.75rem]">
+              <h3 className="mb-2 text-lg font-bold leading-snug text-[#174E4F]">
                 CV &amp; LinkedIn Rewrite Support
               </h3>
-              <p className="mb-6 text-base leading-7 text-[#516361]">
-                Review and guided rewrite support to help you present your healthcare
-                experience clearly for digital health and other non-clinical roles.
+              <p className="mb-4 text-sm leading-6 text-[#516361]">
+                Review and guided rewrite support to present your healthcare experience
+                clearly for non-clinical roles.
               </p>
 
-              <div className="mb-7">
-                <p className="text-5xl font-bold tracking-tight text-[#174E4F]">£45</p>
-              </div>
+              <p className="mb-4 text-3xl font-bold tracking-tight text-[#174E4F]">£45</p>
 
-              <ul className="mb-6 flex-1 space-y-4">
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>Detailed review of your current CV and LinkedIn profile</span>
+              <ul className="mb-4 flex-1 space-y-2.5">
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
+                  <span>Detailed review of your CV and LinkedIn profile</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>
-                    Guided rewrite support for your headline, summary and experience
-                  </span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
+                  <span>Guided rewrite support for headline, summary and experience</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>
-                    Help framing transferable skills for digital health employers
-                  </span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
+                  <span>Help framing transferable skills for digital health roles</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>
-                    Practical edits you can apply with confidence to your applications
-                  </span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
+                  <span>Practical edits you can apply to your applications</span>
                 </li>
               </ul>
 
-              <p className="mb-7 border-l-4 border-[#D96F59] pl-4 text-sm leading-6 text-[#516361]">
-                Guided rewrite support to shape your materials with you, not a fully
-                ghostwritten profile service.
+              <p className="mb-4 border-l-2 border-[#D96F59] pl-3 text-xs leading-5 text-[#516361]">
+                Guided rewrite support with you, not a fully ghostwritten service.
               </p>
 
               <a
                 href="https://cal.com/stacy-nyangere/cv-linkedin-support"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="scale-btn mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+                className="scale-btn mt-auto inline-flex min-h-10 w-full items-center justify-center rounded-full bg-[#174E4F] px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-[#123E3F]"
               >
-                Book CV &amp; LinkedIn Support
+                Book CV &amp; LinkedIn
               </a>
             </div>
           </FadeUp>
 
           {/* Interview Readiness */}
-          <FadeUp delayMs={120} className="h-full">
-            <div className="lift-card flex h-full flex-col rounded-3xl border border-[#C8D8CF] bg-white p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
-              <span className="mb-4 inline-flex w-fit rounded-full bg-[#F7DED4] px-4 py-2 text-sm font-bold text-[#174E4F]">
+          <FadeUp delayMs={110} className="h-full">
+            <div className="lift-card flex h-full flex-col rounded-2xl border border-[#C8D8CF] bg-white p-5 shadow-[0_8px_24px_rgba(23,78,79,0.07)] sm:p-6">
+              <span className="mb-2 inline-flex w-fit rounded-full bg-[#F7DED4] px-3 py-1 text-xs font-bold text-[#174E4F]">
                 Interview Prep
               </span>
-              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#D96F59]">
-                Paid Offer
-              </p>
-              <h3 className="mb-4 text-2xl font-bold leading-tight text-[#174E4F] md:text-[1.75rem]">
+              <h3 className="mb-2 text-lg font-bold leading-snug text-[#174E4F]">
                 Interview Readiness &amp; Mock Interviews
               </h3>
-              <p className="mb-6 text-base leading-7 text-[#516361]">
-                Build confidence before real interviews with structured practice,
-                feedback and a clearer way to talk about your healthcare experience.
+              <p className="mb-4 text-sm leading-6 text-[#516361]">
+                Structured practice and feedback to help you talk about your healthcare
+                experience with confidence.
               </p>
 
-              <div className="mb-7">
-                <p className="text-5xl font-bold tracking-tight text-[#174E4F]">£50</p>
-              </div>
+              <p className="mb-4 text-3xl font-bold tracking-tight text-[#174E4F]">£50</p>
 
-              <ul className="mb-6 flex-1 space-y-4">
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>2 AI practice interviews to rehearse answers at your own pace</span>
+              <ul className="mb-4 flex-1 space-y-2.5">
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
+                  <span>2 AI practice interviews at your own pace</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>
-                    1 live 30-minute mock interview session for personalised feedback
-                  </span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
+                  <span>1 live 30-minute mock interview with feedback</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>
-                    Guidance on communicating transferable skills with clarity and
-                    confidence
-                  </span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
+                  <span>Guidance on communicating transferable skills clearly</span>
                 </li>
-                <li className="flex gap-3 text-base leading-7 text-[#243332]">
-                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>
-                    Practical tips to strengthen your interview story for digital health
-                    and non-clinical roles
-                  </span>
+                <li className="flex gap-2.5 text-sm leading-6 text-[#243332]">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-[#174E4F]" />
+                  <span>Tips to strengthen your interview story</span>
                 </li>
               </ul>
 
-              <p className="mb-7 border-l-4 border-[#D96F59] pl-4 text-sm leading-6 text-[#516361]">
-                Ideal if you are preparing for interviews and want both flexible AI
-                practice and live feedback.
+              <p className="mb-4 border-l-2 border-[#D96F59] pl-3 text-xs leading-5 text-[#516361]">
+                Flexible AI practice plus live feedback before real interviews.
               </p>
 
               <a
                 href="https://cal.com/stacy-nyangere/interview-readiness"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="scale-btn mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+                className="scale-btn mt-auto inline-flex min-h-10 w-full items-center justify-center rounded-full bg-[#174E4F] px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-[#123E3F]"
               >
-                Book Interview Readiness
+                Book Interview Prep
               </a>
             </div>
           </FadeUp>
