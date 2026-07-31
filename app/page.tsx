@@ -549,30 +549,32 @@ export default function Home() {
             Career Mentoring
           </h2>
           <p className="mb-12 max-w-4xl text-lg leading-8 text-[#516361]">
-            Choose the support that matches where you are now. If you are unsure whether
-            mentoring is suitable, begin with a brief introductory call. If you are ready
-            for focused guidance, book a Career Strategy Session or Interview Readiness
-            package.
+            Choose the support that matches where you are now, from a free introductory
+            call to focused sessions on career strategy, CV and LinkedIn positioning, or
+            interview readiness.
           </p>
         </FadeUp>
 
-        <div className="grid items-start gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid items-stretch gap-6 md:grid-cols-2 md:gap-8">
           {/* Introductory Call */}
-          <FadeUp>
-            <div className="lift-card rounded-3xl border border-[#C8D8CF] bg-[#FFFCF9] p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
+          <FadeUp className="h-full">
+            <div className="lift-card flex h-full flex-col rounded-3xl border border-[#C8D8CF] bg-[#FFFCF9] p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
               <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#D96F59]">
                 Free
               </p>
-              <h3 className="mb-5 text-2xl font-bold leading-tight text-[#174E4F] md:text-3xl">
+              <h3 className="mb-4 text-2xl font-bold leading-tight text-[#174E4F] md:text-[1.75rem]">
                 Free 20-Minute Introductory Call
               </h3>
               <p className="mb-6 text-base leading-7 text-[#516361]">
                 A brief conversation to understand where you are in your career, what
-                you are considering and whether a Career Strategy Session would be
-                appropriate.
+                you are considering and whether paid mentoring would be appropriate.
               </p>
 
-              <ul className="mb-6 space-y-4">
+              <div className="mb-7">
+                <p className="text-5xl font-bold tracking-tight text-[#174E4F]">£0</p>
+              </div>
+
+              <ul className="mb-6 flex-1 space-y-4">
                 <li className="flex gap-3 text-base leading-7 text-[#243332]">
                   <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
                   <span>Ask initial questions about the mentoring service</span>
@@ -583,7 +585,7 @@ export default function Home() {
                 </li>
                 <li className="flex gap-3 text-base leading-7 text-[#243332]">
                   <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
-                  <span>Decide whether the full session is suitable for you</span>
+                  <span>Decide which package is the best fit for you</span>
                 </li>
               </ul>
 
@@ -596,7 +598,7 @@ export default function Home() {
                 href="https://cal.com/stacy-nyangere/career-intro-call"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+                className="scale-btn mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
               >
                 Book a Free Introductory Call
               </a>
@@ -604,21 +606,21 @@ export default function Home() {
           </FadeUp>
 
           {/* Career Strategy Session */}
-          <FadeUp delayMs={80}>
-            <div className="lift-card relative rounded-3xl border-2 border-[#174E4F] bg-[#174E4F] p-8 shadow-[0_18px_45px_rgba(23,78,79,0.20)] md:p-10">
-              <span className="mb-5 inline-flex rounded-full bg-[#D96F59] px-4 py-2 text-sm font-bold text-white">
+          <FadeUp delayMs={60} className="h-full">
+            <div className="lift-card relative flex h-full flex-col rounded-3xl border-2 border-[#174E4F] bg-[#174E4F] p-8 shadow-[0_18px_45px_rgba(23,78,79,0.20)] md:p-10">
+              <span className="mb-4 inline-flex w-fit rounded-full bg-[#D96F59] px-4 py-2 text-sm font-bold text-white">
                 Focused Support
               </span>
               <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#F7DED4]">
                 Paid Offer
               </p>
-              <h3 className="mb-5 text-2xl font-bold leading-tight text-[#FFF9F4] md:text-3xl">
+              <h3 className="mb-4 text-2xl font-bold leading-tight text-[#FFF9F4] md:text-[1.75rem]">
                 45-Minute Career Strategy Session
               </h3>
               <p className="mb-6 text-base leading-7 text-[#DDE9E2]">
-                A focused one-to-one session designed to help you explore realistic
-                career directions, recognise the value of your experience and identify
-                practical priorities for moving forward.
+                A focused one-to-one session to explore realistic career directions,
+                recognise the value of your experience and identify practical next
+                steps.
               </p>
 
               <div className="mb-7">
@@ -628,12 +630,12 @@ export default function Home() {
                 <p className="mt-2 text-sm font-semibold uppercase tracking-[0.14em] text-[#F7DED4]">
                   Introductory Price
                 </p>
-                <p className="mt-1 text-5xl font-bold tracking-tight text-[#FFF9F4] md:text-6xl">
+                <p className="mt-1 text-5xl font-bold tracking-tight text-[#FFF9F4]">
                   £30
                 </p>
               </div>
 
-              <ul className="mb-7 space-y-4">
+              <ul className="mb-6 flex-1 space-y-4">
                 <li className="flex gap-3 text-base leading-7 text-[#FFF9F4]">
                   <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#D96F59]" />
                   <span>
@@ -659,31 +661,93 @@ export default function Home() {
               </ul>
 
               <p className="mb-7 border-l-4 border-[#D96F59] pl-4 text-sm leading-6 text-[#DDE9E2]">
-                The aim is for you to leave with greater clarity about the options worth
-                exploring and the actions to prioritise next.
+                Leave with greater clarity about the options worth exploring and the
+                actions to prioritise next.
               </p>
 
               <a
                 href="https://cal.com/stacy-nyangere/career-strategy-session"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#FFF9F4] px-8 py-4 text-base font-bold text-[#174E4F] shadow-[0_10px_25px_rgba(0,0,0,0.15)] hover:bg-white hover:shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
+                className="scale-btn mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#FFF9F4] px-8 py-4 text-base font-bold text-[#174E4F] shadow-[0_10px_25px_rgba(0,0,0,0.15)] hover:bg-white hover:shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
               >
                 Book a Career Strategy Session
               </a>
             </div>
           </FadeUp>
 
+          {/* CV & LinkedIn */}
+          <FadeUp delayMs={90} className="h-full">
+            <div className="lift-card flex h-full flex-col rounded-3xl border border-[#C8D8CF] bg-white p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
+              <span className="mb-4 inline-flex w-fit rounded-full bg-[#DDE9E2] px-4 py-2 text-sm font-bold text-[#174E4F]">
+                Profile Support
+              </span>
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#D96F59]">
+                Paid Offer
+              </p>
+              <h3 className="mb-4 text-2xl font-bold leading-tight text-[#174E4F] md:text-[1.75rem]">
+                CV &amp; LinkedIn Rewrite Support
+              </h3>
+              <p className="mb-6 text-base leading-7 text-[#516361]">
+                Review and guided rewrite support to help you present your healthcare
+                experience clearly for digital health and other non-clinical roles.
+              </p>
+
+              <div className="mb-7">
+                <p className="text-5xl font-bold tracking-tight text-[#174E4F]">£45</p>
+              </div>
+
+              <ul className="mb-6 flex-1 space-y-4">
+                <li className="flex gap-3 text-base leading-7 text-[#243332]">
+                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                  <span>Detailed review of your current CV and LinkedIn profile</span>
+                </li>
+                <li className="flex gap-3 text-base leading-7 text-[#243332]">
+                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                  <span>
+                    Guided rewrite support for your headline, summary and experience
+                  </span>
+                </li>
+                <li className="flex gap-3 text-base leading-7 text-[#243332]">
+                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                  <span>
+                    Help framing transferable skills for digital health employers
+                  </span>
+                </li>
+                <li className="flex gap-3 text-base leading-7 text-[#243332]">
+                  <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
+                  <span>
+                    Practical edits you can apply with confidence to your applications
+                  </span>
+                </li>
+              </ul>
+
+              <p className="mb-7 border-l-4 border-[#D96F59] pl-4 text-sm leading-6 text-[#516361]">
+                Guided rewrite support to shape your materials with you, not a fully
+                ghostwritten profile service.
+              </p>
+
+              <a
+                href="https://cal.com/stacy-nyangere/cv-linkedin-support"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="scale-btn mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+              >
+                Book CV &amp; LinkedIn Support
+              </a>
+            </div>
+          </FadeUp>
+
           {/* Interview Readiness */}
-          <FadeUp delayMs={120}>
-            <div className="lift-card rounded-3xl border border-[#C8D8CF] bg-white p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
-              <span className="mb-5 inline-flex rounded-full bg-[#F7DED4] px-4 py-2 text-sm font-bold text-[#174E4F]">
+          <FadeUp delayMs={120} className="h-full">
+            <div className="lift-card flex h-full flex-col rounded-3xl border border-[#C8D8CF] bg-white p-8 shadow-[0_12px_32px_rgba(23,78,79,0.08)] md:p-10">
+              <span className="mb-4 inline-flex w-fit rounded-full bg-[#F7DED4] px-4 py-2 text-sm font-bold text-[#174E4F]">
                 Interview Prep
               </span>
               <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#D96F59]">
                 Paid Offer
               </p>
-              <h3 className="mb-5 text-2xl font-bold leading-tight text-[#174E4F] md:text-3xl">
+              <h3 className="mb-4 text-2xl font-bold leading-tight text-[#174E4F] md:text-[1.75rem]">
                 Interview Readiness &amp; Mock Interviews
               </h3>
               <p className="mb-6 text-base leading-7 text-[#516361]">
@@ -692,12 +756,10 @@ export default function Home() {
               </p>
 
               <div className="mb-7">
-                <p className="text-5xl font-bold tracking-tight text-[#174E4F] md:text-6xl">
-                  £50
-                </p>
+                <p className="text-5xl font-bold tracking-tight text-[#174E4F]">£50</p>
               </div>
 
-              <ul className="mb-6 space-y-4">
+              <ul className="mb-6 flex-1 space-y-4">
                 <li className="flex gap-3 text-base leading-7 text-[#243332]">
                   <CheckIcon className="mt-1 h-5 w-5 shrink-0 text-[#174E4F]" />
                   <span>2 AI practice interviews to rehearse answers at your own pace</span>
@@ -733,7 +795,7 @@ export default function Home() {
                 href="https://cal.com/stacy-nyangere/interview-readiness"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+                className="scale-btn mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
               >
                 Book Interview Readiness
               </a>

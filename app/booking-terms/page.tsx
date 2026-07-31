@@ -89,6 +89,13 @@ export default function BookingTerms() {
                     includes 2 AI practice interviews and 1 live 30-minute mock
                     interview session.
                   </li>
+                  <li>
+                    <strong className="font-semibold text-slate-900 dark:text-slate-100">
+                      CV &amp; LinkedIn Rewrite Support:
+                    </strong>{" "}
+                    review and guided rewrite support for your CV and LinkedIn
+                    profile.
+                  </li>
                 </ul>
                 <p className="mt-4">
                   Sessions normally take place online through Google Meet. Any
@@ -141,6 +148,10 @@ export default function BookingTerms() {
                   The current price of a Career Strategy Session is{" "}
                   <strong className="font-semibold text-slate-900 dark:text-slate-100">
                     £30
+                  </strong>
+                  . The current price of CV &amp; LinkedIn Rewrite Support is{" "}
+                  <strong className="font-semibold text-slate-900 dark:text-slate-100">
+                    £45
                   </strong>
                   . The current price of the Interview Readiness &amp; Mock Interviews
                   package is{" "}
