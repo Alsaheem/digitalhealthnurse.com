@@ -64,9 +64,11 @@ function TestimonialCard({
   quote: string;
 }) {
   return (
-    <article className="testimonial-card flex w-[min(85vw,22rem)] shrink-0 flex-col rounded-3xl border border-[#DDE9E2] bg-white p-7 shadow-[0_12px_32px_rgba(23,78,79,0.08)] sm:w-[24rem] sm:p-8">
+    <article className="testimonial-card flex w-[min(88vw,20rem)] shrink-0 flex-col rounded-3xl border border-[#DDE9E2] bg-white p-6 shadow-[0_12px_32px_rgba(23,78,79,0.08)] sm:w-[24rem] sm:p-8">
       <Stars />
-      <p className="mb-6 flex-1 text-base leading-7 text-[#243332]">&ldquo;{quote}&rdquo;</p>
+      <p className="mb-5 flex-1 text-[0.95rem] leading-7 text-[#243332] sm:mb-6 sm:text-base">
+        &ldquo;{quote}&rdquo;
+      </p>
       <div>
         <p className="text-base font-bold text-[#174E4F]">{name}</p>
         <p className="mt-1 text-sm leading-6 text-[#516361]">{role}</p>
@@ -87,10 +89,10 @@ export default function TestimonialsCarousel() {
         <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[#D96F59]">
           Testimonials
         </p>
-        <h2 className="font-hero-serif text-4xl font-bold leading-tight text-[#174E4F] md:text-5xl">
+        <h2 className="font-hero-serif text-[1.75rem] font-bold leading-tight text-[#174E4F] sm:text-4xl md:text-5xl">
           Guidance from someone who understands the journey
         </h2>
-        <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#516361]">
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#516361] sm:mt-5 sm:text-lg sm:leading-8">
           Reflections from healthcare professionals exploring careers beyond
           clinical practice.
         </p>

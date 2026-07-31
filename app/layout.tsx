@@ -5,7 +5,7 @@ import {
   SITE_URL,
   buildWebsiteJsonLd,
 } from "../lib/seo";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -47,6 +47,12 @@ export const metadata: Metadata = {
     },
   },
   category: "career mentoring",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({

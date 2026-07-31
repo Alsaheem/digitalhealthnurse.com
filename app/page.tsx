@@ -160,7 +160,7 @@ function CheckIcon({ className }: { className: string }) {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FFF9F4] text-[#243332]">
+    <div className="min-h-screen overflow-x-hidden bg-[#FFF9F4] text-[#243332]">
       <SiteHeader />
 
       {/* Hero Section */}
@@ -174,32 +174,32 @@ export default function Home() {
           className="absolute right-[8%] top-14 h-3 w-3 rounded-full bg-[#D96F59] sm:h-4 sm:w-4"
         />
 
-        <div className="relative mx-auto max-w-6xl px-6 py-14 text-center sm:px-8 md:py-18 lg:py-20">
-          <p className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-[#D96F59] sm:text-base">
+        <div className="relative mx-auto max-w-6xl px-5 py-12 text-center sm:px-8 sm:py-14 md:py-18 lg:py-20">
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#D96F59] sm:mb-5 sm:text-sm md:text-base">
             DIGITAL HEALTH NURSE
           </p>
 
-          <h1 className="font-hero-serif mx-auto mb-7 max-w-[53rem] text-[2.5rem] font-bold leading-[1.08] tracking-[-0.025em] text-[#174E4F] md:text-[2.875rem] lg:text-[3.75rem]">
+          <h1 className="font-hero-serif mx-auto mb-5 max-w-[53rem] text-[2rem] font-bold leading-[1.1] tracking-[-0.025em] text-[#174E4F] sm:mb-7 sm:text-[2.5rem] md:text-[2.875rem] lg:text-[3.75rem]">
             You Don&apos;t Have to Leave Healthcare to Leave Clinical Practice.
           </h1>
 
-          <p className="mx-auto mb-9 max-w-[47.5rem] text-[1.1875rem] leading-8 text-[#243332]/85">
+          <p className="mx-auto mb-8 max-w-[47.5rem] text-base leading-7 text-[#243332]/85 sm:mb-9 sm:text-[1.1875rem] sm:leading-8">
             I help nurses and healthcare professionals transition into digital health,
             health tech and other non-clinical careers by showing them how to leverage
             the experience they already have.
           </p>
 
-          <div className="flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
+          <div className="flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <a
               href="#mentoring"
-              className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+              className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-7 py-3.5 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)] sm:px-8 sm:py-4"
             >
               View Mentoring Options
             </a>
 
             <a
               href="#about"
-              className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full border-2 border-[#D96F59] bg-[#FFFFFF]/70 px-8 py-4 text-base font-bold text-[#174E4F] shadow-sm hover:bg-[#F7DED4]"
+              className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full border-2 border-[#D96F59] bg-[#FFFFFF]/70 px-7 py-3.5 text-base font-bold text-[#174E4F] shadow-sm hover:bg-[#F7DED4] sm:px-8 sm:py-4"
             >
               Meet Stacy
             </a>
@@ -293,16 +293,16 @@ export default function Home() {
       {/* Meet Stacy */}
       <section id="about" className="bg-[#DDE9E2] scroll-mt-20">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 sm:px-8 md:py-20 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-20 lg:py-24">
-          <FadeUp className="relative mx-auto w-full max-w-md lg:mx-0">
+          <FadeUp className="relative mx-auto w-full max-w-sm sm:max-w-md lg:mx-0">
             <div
               aria-hidden="true"
-              className="absolute -bottom-5 -right-5 h-full w-full rounded-[3rem_1.5rem_3rem_1.5rem] bg-[#F7DED4] sm:-bottom-7 sm:-right-7"
+              className="absolute -bottom-3 -right-3 h-full w-full rounded-[2.5rem_1.25rem_2.5rem_1.25rem] bg-[#F7DED4] sm:-bottom-5 sm:-right-5 sm:rounded-[3rem_1.5rem_3rem_1.5rem] md:-bottom-7 md:-right-7"
             />
             <div
               aria-hidden="true"
-              className="absolute -left-4 -top-4 h-16 w-16 rounded-full bg-[#D96F59]/90 sm:h-20 sm:w-20"
+              className="absolute -left-3 -top-3 h-12 w-12 rounded-full bg-[#D96F59]/90 sm:-left-4 sm:-top-4 sm:h-16 sm:w-16 md:h-20 md:w-20"
             />
-            <div className="relative aspect-[1122/1402] overflow-hidden rounded-[3rem_1.5rem_3rem_1.5rem] border-4 border-white bg-white shadow-[0_22px_50px_rgba(23,78,79,0.18)]">
+            <div className="relative aspect-[1122/1402] overflow-hidden rounded-[2.5rem_1.25rem_2.5rem_1.25rem] border-4 border-white bg-white shadow-[0_22px_50px_rgba(23,78,79,0.18)] sm:rounded-[3rem_1.5rem_3rem_1.5rem]">
               <Image
                 src={profilePhoto}
                 alt="Stacy Nyangere"
@@ -398,10 +398,10 @@ export default function Home() {
       <section id="projects" className="bg-[#174E4F] scroll-mt-20">
         <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 md:py-24">
           <FadeUp>
-            <h2 className="mb-5 max-w-4xl text-4xl font-bold tracking-tight text-[#FFF9F4] md:text-5xl">
+            <h2 className="mb-4 max-w-4xl text-[1.75rem] font-bold tracking-tight text-[#FFF9F4] sm:mb-5 sm:text-4xl md:text-5xl">
               This Mentoring May Be Right for You If…
             </h2>
-            <p className="mb-12 max-w-3xl text-lg leading-8 text-[#DDE9E2]">
+            <p className="mb-10 max-w-3xl text-base leading-7 text-[#DDE9E2] sm:mb-12 sm:text-lg sm:leading-8">
               You do not need to have your next career completely figured out. This
               support is designed for healthcare professionals who want greater clarity
               and practical direction.
@@ -412,7 +412,7 @@ export default function Home() {
             <div className="flex gap-5 pb-8 md:pr-10">
               <CheckIcon className="mt-1 h-6 w-6 shrink-0 text-[#D96F59]" />
               <div>
-                <h3 className="mb-3 text-2xl font-bold text-[#FFF9F4]">
+                <h3 className="mb-2 text-xl font-bold text-[#FFF9F4] sm:mb-3 sm:text-2xl">
                   You Want Something Different
                 </h3>
                 <p className="text-base leading-7 text-[#DDE9E2]">
@@ -426,7 +426,7 @@ export default function Home() {
             <div className="flex gap-5 border-t border-[#DDE9E2]/25 py-8 md:border-l md:border-t-0 md:py-0 md:pl-10">
               <CheckIcon className="mt-1 h-6 w-6 shrink-0 text-[#D96F59]" />
               <div>
-                <h3 className="mb-3 text-2xl font-bold text-[#FFF9F4]">
+                <h3 className="mb-2 text-xl font-bold text-[#FFF9F4] sm:mb-3 sm:text-2xl">
                   You Are Curious About Digital Health
                 </h3>
                 <p className="text-base leading-7 text-[#DDE9E2]">
@@ -440,7 +440,7 @@ export default function Home() {
             <div className="flex gap-5 border-t border-[#DDE9E2]/25 py-8 md:pb-0 md:pr-10">
               <CheckIcon className="mt-1 h-6 w-6 shrink-0 text-[#D96F59]" />
               <div>
-                <h3 className="mb-3 text-2xl font-bold text-[#FFF9F4]">
+                <h3 className="mb-2 text-xl font-bold text-[#FFF9F4] sm:mb-3 sm:text-2xl">
                   You Struggle to Explain Your Transferable Skills
                 </h3>
                 <p className="text-base leading-7 text-[#DDE9E2]">
@@ -454,7 +454,7 @@ export default function Home() {
             <div className="flex gap-5 border-t border-[#DDE9E2]/25 pt-8 md:border-l md:pl-10 md:pb-0">
               <CheckIcon className="mt-1 h-6 w-6 shrink-0 text-[#D96F59]" />
               <div>
-                <h3 className="mb-3 text-2xl font-bold text-[#FFF9F4]">
+                <h3 className="mb-2 text-xl font-bold text-[#FFF9F4] sm:mb-3 sm:text-2xl">
                   You Want Practical Next Steps
                 </h3>
                 <p className="text-base leading-7 text-[#DDE9E2]">
@@ -468,7 +468,7 @@ export default function Home() {
             <div className="flex gap-5 border-t border-[#DDE9E2]/25 pt-8 md:col-span-2 md:mt-2">
               <CheckIcon className="mt-1 h-6 w-6 shrink-0 text-[#D96F59]" />
               <div className="max-w-3xl">
-                <h3 className="mb-3 text-2xl font-bold text-[#FFF9F4]">
+                <h3 className="mb-2 text-xl font-bold text-[#FFF9F4] sm:mb-3 sm:text-2xl">
                   You&apos;re Applying But Not Getting Interviews
                 </h3>
                 <p className="text-base leading-7 text-[#DDE9E2]">
@@ -542,13 +542,13 @@ export default function Home() {
       {/* Career Mentoring Section */}
       <section
         id="mentoring"
-        className="mx-auto max-w-7xl px-6 pb-6 pt-20 scroll-mt-36 sm:px-8 md:pb-10 md:pt-24 lg:scroll-mt-24"
+        className="mx-auto max-w-7xl px-5 pb-6 pt-16 scroll-mt-24 sm:px-8 sm:pt-20 md:pb-10 md:pt-24 lg:scroll-mt-24"
       >
         <FadeUp>
-          <h2 className="mb-5 text-4xl font-bold tracking-tight text-[#174E4F] md:text-5xl">
+          <h2 className="mb-4 text-[1.75rem] font-bold tracking-tight text-[#174E4F] sm:mb-5 sm:text-4xl md:text-5xl">
             Career Mentoring
           </h2>
-          <p className="mb-12 max-w-4xl text-lg leading-8 text-[#516361]">
+          <p className="mb-8 max-w-4xl text-base leading-7 text-[#516361] sm:mb-12 sm:text-lg sm:leading-8">
             Choose the support that matches where you are now, from a free introductory
             call to focused sessions on career strategy, CV and LinkedIn positioning, or
             interview readiness.
@@ -993,21 +993,21 @@ export default function Home() {
           <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[#D96F59]">
             READY WHEN YOU ARE
           </p>
-          <h2 className="mx-auto mb-6 max-w-4xl text-4xl font-bold tracking-tight text-[#174E4F] md:text-5xl">
+          <h2 className="mx-auto mb-5 max-w-4xl text-[1.75rem] font-bold tracking-tight text-[#174E4F] sm:mb-6 sm:text-4xl md:text-5xl">
             Ready to Explore Your Next Career Move?
           </h2>
-          <p className="mx-auto mb-9 max-w-3xl text-lg leading-8 text-[#243332]">
+          <p className="mx-auto mb-8 max-w-3xl text-base leading-7 text-[#243332] sm:mb-9 sm:text-lg sm:leading-8">
             Choose a focused Career Strategy Session if you are ready to work through
             your options, or begin with a free introductory call if you are still
             deciding whether mentoring is right for you.
           </p>
 
-          <div className="flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
+          <div className="flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center sm:gap-4">
             <a
               href="https://cal.com/stacy-nyangere/career-strategy-session"
               target="_blank"
               rel="noopener noreferrer"
-              className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)]"
+              className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-6 py-3.5 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)] sm:px-8 sm:py-4"
             >
               Book a Career Strategy Session
             </a>
@@ -1015,7 +1015,7 @@ export default function Home() {
               href="https://cal.com/stacy-nyangere/career-intro-call"
               target="_blank"
               rel="noopener noreferrer"
-              className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full border-2 border-[#174E4F] bg-[#FFF9F4]/70 px-8 py-4 text-base font-bold text-[#174E4F] hover:bg-[#FFF9F4]"
+              className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full border-2 border-[#174E4F] bg-[#FFF9F4]/70 px-6 py-3.5 text-base font-bold text-[#174E4F] hover:bg-[#FFF9F4] sm:px-8 sm:py-4"
             >
               Book a Free Introductory Call
             </a>

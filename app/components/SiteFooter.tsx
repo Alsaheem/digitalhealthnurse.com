@@ -18,7 +18,7 @@ export default function SiteFooter() {
 
           <nav
             aria-label="Site links"
-            className="flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:gap-6"
+            className="flex flex-col items-start gap-2 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-2"
           >
             <a
               href="/#contact"
