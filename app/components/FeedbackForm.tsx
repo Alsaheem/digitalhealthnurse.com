@@ -1,8 +1,11 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useMemo, useState } from "react";
 
 const STAR_OPTIONS = [1, 2, 3, 4, 5] as const;
+
+const FEEDBACK_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbyqcn4suMI1dCDIfslClegXDtqVOGcJeSeG57BOzL3AY0wfyjVMxjTEmx_do5dFvto_yg/exec";
 
 export default function FeedbackForm() {
   const [name, setName] = useState("");
@@ -11,11 +14,7 @@ export default function FeedbackForm() {
   const [hoverRating, setHoverRating] = useState<number | null>(null);
   const [error, setError] = useState("");
   const [sent, setSent] = useState(false);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    setSent(params.get("sent") === "1");
-  }, []);
+  const [submitting, setSubmitting] = useState(false);
 
   const activeRating = hoverRating ?? rating;
 
@@ -24,14 +23,42 @@ export default function FeedbackForm() {
     return `${rating} out of 5 stars selected`;
   }, [rating]);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
     if (!rating) {
-      event.preventDefault();
       setError("Please select a star rating before submitting.");
       return;
     }
 
     setError("");
+    setSubmitting(true);
+
+    try {
+      // Google Apps Script often needs no-cors from browsers.
+      // The row is still written even though the response is opaque.
+      await fetch(FEEDBACK_ENDPOINT, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify({
+          name: name.trim(),
+          comment: comment.trim(),
+          rating,
+        }),
+      });
+
+      setSent(true);
+      setName("");
+      setComment("");
+      setRating(null);
+    } catch {
+      setError("Something went wrong. Please try again in a moment.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (sent) {
@@ -42,37 +69,25 @@ export default function FeedbackForm() {
       >
         <p className="text-2xl font-bold text-[#174E4F]">Thank you for your feedback</p>
         <p className="mx-auto mt-4 max-w-lg text-base leading-7 text-[#516361]">
-          Your message has been sent. I appreciate you taking the time to share your
+          Your message has been saved. I appreciate you taking the time to share your
           experience.
         </p>
-        <a
-          href="/feedback"
+        <button
+          type="button"
+          onClick={() => setSent(false)}
           className="scale-btn mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F]"
         >
           Send another response
-        </a>
+        </button>
       </div>
     );
   }
 
   return (
     <form
-      action="https://formsubmit.co/stacynyangere@gmail.com"
-      method="POST"
       onSubmit={handleSubmit}
       className="rounded-3xl border border-[#DDE9E2] bg-white p-7 shadow-[0_12px_32px_rgba(23,78,79,0.08)] sm:p-10"
     >
-      <input type="hidden" name="_subject" value="New website feedback" />
-      <input
-        type="hidden"
-        name="_next"
-        value="https://digitalhealthnurse.com/feedback?sent=1"
-      />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
-      <input type="hidden" name="rating" value={rating ?? ""} />
-
       <div className="space-y-7">
         <div>
           <label
@@ -166,9 +181,10 @@ export default function FeedbackForm() {
 
         <button
           type="submit"
-          className="scale-btn inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)] sm:w-auto"
+          disabled={submitting}
+          className="scale-btn inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#174E4F] px-8 py-4 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)] disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
         >
-          Submit Feedback
+          {submitting ? "Submitting..." : "Submit Feedback"}
         </button>
       </div>
     </form>
