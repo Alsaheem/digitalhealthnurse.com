@@ -700,7 +700,7 @@ export default function Home() {
               </p>
 
               <a
-                href="https://cal.com/stacy-nyangere/cv-linkedin-support"
+                href="https://cal.com/digitalhealthnurse/cv-linkedin-rewrite-support"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="scale-btn mt-auto inline-flex min-h-10 w-full items-center justify-center rounded-full bg-[#174E4F] px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-[#123E3F]"
@@ -750,7 +750,7 @@ export default function Home() {
               </p>
 
               <a
-                href="https://cal.com/stacy-nyangere/interview-readiness"
+                href="https://cal.com/digitalhealthnurse/interview-preparation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="scale-btn mt-auto inline-flex min-h-10 w-full items-center justify-center rounded-full bg-[#174E4F] px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-[#123E3F]"
