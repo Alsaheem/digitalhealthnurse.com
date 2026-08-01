@@ -47,10 +47,10 @@ export default function PrivacyNotice() {
                   If you have a question about this notice or how your personal
                   information is handled, please email{" "}
                   <a
-                    href="mailto:stacynyangere@gmail.com"
+                    href="mailto:stacy@digitalhealthnurse.com"
                     className="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-700 dark:text-slate-100 dark:decoration-slate-600 dark:hover:decoration-slate-300"
                   >
-                    stacynyangere@gmail.com
+                    stacy@digitalhealthnurse.com
                   </a>
                   .
                 </p>
@@ -365,10 +365,10 @@ export default function PrivacyNotice() {
                 <p className="mt-4">
                   To make a request, email{" "}
                   <a
-                    href="mailto:stacynyangere@gmail.com"
+                    href="mailto:stacy@digitalhealthnurse.com"
                     className="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-700 dark:text-slate-100 dark:decoration-slate-600 dark:hover:decoration-slate-300"
                   >
-                    stacynyangere@gmail.com
+                    stacy@digitalhealthnurse.com
                   </a>
                   .
                 </p>
@@ -451,10 +451,10 @@ export default function PrivacyNotice() {
                   <br />
                   Email:{" "}
                   <a
-                    href="mailto:stacynyangere@gmail.com"
+                    href="mailto:stacy@digitalhealthnurse.com"
                     className="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-700 dark:text-slate-100 dark:decoration-slate-600 dark:hover:decoration-slate-300"
                   >
-                    stacynyangere@gmail.com
+                    stacy@digitalhealthnurse.com
                   </a>
                 </address>
               </section>

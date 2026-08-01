@@ -1024,7 +1024,7 @@ export default function Home() {
           <p className="mt-7 text-sm leading-6 text-[#516361]">
             Have another question?{" "}
             <a
-              href="mailto:stacynyangere@gmail.com"
+              href="mailto:stacy@digitalhealthnurse.com"
               className="font-semibold text-[#174E4F] underline decoration-[#D96F59] decoration-2 underline-offset-4 transition-colors hover:text-[#123E3F] focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D96F59] focus-visible:ring-offset-2"
             >
               Email Stacy

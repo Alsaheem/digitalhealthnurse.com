@@ -8,7 +8,7 @@ This file helps language models understand what this site is about and which pag
 
 - Name: Digital Health Nurse
 - URL: https://digitalhealthnurse.com
-- Contact: stacynyangere@gmail.com
+- Contact: stacy@digitalhealthnurse.com
 - LinkedIn: https://www.linkedin.com/in/snyangere
 
 ## About

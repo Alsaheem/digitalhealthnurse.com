@@ -50,7 +50,7 @@ export function buildWebsiteJsonLd() {
         "@id": `${SITE_URL}/#person`,
         name: "Stacy Nyangere",
         url: SITE_URL,
-        email: "stacynyangere@gmail.com",
+        email: "stacy@digitalhealthnurse.com",
         jobTitle: "Digital Health Career Mentor",
         description:
           "Registered Adult Nurse offering career mentoring for nurses and healthcare professionals transitioning into digital health and non-clinical roles.",

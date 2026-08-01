@@ -41,10 +41,10 @@ export default function BookingTerms() {
                 <p>
                   If you have any questions about these terms, please email{" "}
                   <a
-                    href="mailto:stacynyangere@gmail.com"
+                    href="mailto:stacy@digitalhealthnurse.com"
                     className="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-700 dark:text-slate-100 dark:decoration-slate-600 dark:hover:decoration-slate-300"
                   >
-                    stacynyangere@gmail.com
+                    stacy@digitalhealthnurse.com
                   </a>
                   .
                 </p>
@@ -225,10 +225,10 @@ export default function BookingTerms() {
                 <p className="mt-4">
                   To exercise a statutory cancellation right, email{" "}
                   <a
-                    href="mailto:stacynyangere@gmail.com"
+                    href="mailto:stacy@digitalhealthnurse.com"
                     className="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-700 dark:text-slate-100 dark:decoration-slate-600 dark:hover:decoration-slate-300"
                   >
-                    stacynyangere@gmail.com
+                    stacy@digitalhealthnurse.com
                   </a>{" "}
                   and clearly state that you wish to cancel. You may use any clear
                   written statement; no particular wording is required.
@@ -465,10 +465,10 @@ export default function BookingTerms() {
                   If you are unhappy with the service or have a concern about your
                   booking, please email{" "}
                   <a
-                    href="mailto:stacynyangere@gmail.com"
+                    href="mailto:stacy@digitalhealthnurse.com"
                     className="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-700 dark:text-slate-100 dark:decoration-slate-600 dark:hover:decoration-slate-300"
                   >
-                    stacynyangere@gmail.com
+                    stacy@digitalhealthnurse.com
                   </a>
                   .
                 </p>
@@ -538,10 +538,10 @@ export default function BookingTerms() {
                   <br />
                   Email:{" "}
                   <a
-                    href="mailto:stacynyangere@gmail.com"
+                    href="mailto:stacy@digitalhealthnurse.com"
                     className="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-700 dark:text-slate-100 dark:decoration-slate-600 dark:hover:decoration-slate-300"
                   >
-                    stacynyangere@gmail.com
+                    stacy@digitalhealthnurse.com
                   </a>
                 </address>
                 <p className="mt-8 text-sm text-slate-500 dark:text-slate-400">
