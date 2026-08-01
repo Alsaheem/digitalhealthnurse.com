@@ -592,7 +592,7 @@ export default function Home() {
               </p>
 
               <a
-                href="https://cal.com/stacy-nyangere/career-intro-call"
+                href="https://cal.com/digitalhealthnurse/career-intro-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="scale-btn mt-auto inline-flex min-h-10 w-full items-center justify-center rounded-full bg-[#174E4F] px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-[#123E3F]"
@@ -650,7 +650,7 @@ export default function Home() {
               </p>
 
               <a
-                href="https://cal.com/stacy-nyangere/career-strategy-session"
+                href="https://cal.com/digitalhealthnurse/career-strategy-session"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="scale-btn mt-auto inline-flex min-h-10 w-full items-center justify-center rounded-full bg-[#FFF9F4] px-5 py-2.5 text-sm font-bold text-[#174E4F] shadow-sm hover:bg-white"
@@ -1004,7 +1004,7 @@ export default function Home() {
 
           <div className="flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center sm:gap-4">
             <a
-              href="https://cal.com/stacy-nyangere/career-strategy-session"
+              href="https://cal.com/digitalhealthnurse/career-strategy-session"
               target="_blank"
               rel="noopener noreferrer"
               className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full bg-[#174E4F] px-6 py-3.5 text-base font-bold text-white shadow-[0_10px_25px_rgba(23,78,79,0.18)] hover:bg-[#123E3F] hover:shadow-[0_14px_30px_rgba(23,78,79,0.24)] sm:px-8 sm:py-4"
@@ -1012,7 +1012,7 @@ export default function Home() {
               Book a Career Strategy Session
             </a>
             <a
-              href="https://cal.com/stacy-nyangere/career-intro-call"
+              href="https://cal.com/digitalhealthnurse/career-intro-call"
               target="_blank"
               rel="noopener noreferrer"
               className="scale-btn inline-flex min-h-12 items-center justify-center rounded-full border-2 border-[#174E4F] bg-[#FFF9F4]/70 px-6 py-3.5 text-base font-bold text-[#174E4F] hover:bg-[#FFF9F4] sm:px-8 sm:py-4"
